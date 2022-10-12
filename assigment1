@@ -1,0 +1,44 @@
+//LEAP YEAR
+function checkLeapYear(year) {
+
+    if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+        console.log(year + ' is a leap year');
+    } else {
+        console.log(year + ' is not a leap year');
+    }
+}
+const year = prompt('Enter a year:');
+
+checkLeapYear(year);
+
+
+//FACTORIAL OF A NUMBER
+function factorial(n){
+    let answer = 1;
+    if (n == 0 || n == 1){
+      return answer;
+    }
+    else{
+      for(var i = n; i >= 1; i--){
+        answer = answer * i;
+      }
+      return answer;
+    }  
+  }
+  let n = 4;
+  answer = factorial(n)
+  console.log("The factorial of " + n + " is " + answer);
+
+//CONVERT TEMPERATURES
+function convertF(celsius) 
+{
+    fahrenheit = celsius * 9/5 + 32;
+    return fahrenheit;
+}
+function convertC(Fahrenheit)
+{
+    celsius = Fahrenheit * 5/9 +1/32;
+    return celsius; 
+}
+convertF(60);
+connvertC(45);
